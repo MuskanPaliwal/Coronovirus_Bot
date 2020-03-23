@@ -61,7 +61,34 @@ if __name__ == '__main__':
    
         changed = False
 
+        for state in cur_data:
+            if state not in past_data:
+                # new state has emerged
+                info.append(f'NEW_STATE {state} got corona virus: {cur_data[state][current_time]}')
+                past_data[state] = {}
+                changed = True
+            else:
+                past = past_data[state]['latest']
+                cur = cur_data[state][current_time]
+                if past != cur:
+                    changed = True
+                    info.append(f'Change for {state}: {past}->{cur}')
+        
+        events_info = ''
+        for event in info:
+            logging.warning(event)
+            events_info += '\n - ' + event.replace("'", "")
+
+        if changed:
+            # override the latest one now
+            for state in cur_data:
+                past_data[state]['latest'] = cur_data[state][current_time]
+                past_data[state][current_time] = cur_data[state][current_time]
+            save(past_data)
 
 table = tabulate(stats, headers=SHORT_HEADERS, tablefmt='psql')
             slack_text = f'Please find CoronaVirus Summary for India below:\n{events_info}\n```{table}```'
             slacker()(slack_text)
+except Exception as e:
+        logging.exception('oops, corono script failed.')
+        slacker()(f'Exception occured: [{e}]')
