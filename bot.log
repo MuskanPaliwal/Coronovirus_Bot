@@ -181,3 +181,23 @@ FileNotFoundError: [Errno 2] No such file or directory: 'corona_india_data.json'
 [2020-03-23 16:52:58,914] https://hooks.slack.com:443 "POST /services/T010GMV9Q4V/B010JTP7AUE/J2nsAsiAmcOh3cbAh4ZD0v2W HTTP/1.1" 200 22
 [2020-03-23 17:12:04,628] Starting new HTTPS connection (1): www.mohfw.gov.in:443
 [2020-03-23 17:12:05,514] https://www.mohfw.gov.in:443 "GET / HTTP/1.1" 200 5251
+[2020-03-23 17:24:41,936] Starting new HTTPS connection (1): www.mohfw.gov.in:443
+[2020-03-23 17:24:42,482] https://www.mohfw.gov.in:443 "GET / HTTP/1.1" 200 5251
+[2020-03-23 17:24:42,502] oops, corono script failed.
+Traceback (most recent call last):
+  File "covid-19_bot.py", line 59, in <module>
+    past_data = load()
+  File "covid-19_bot.py", line 27, in load
+    res = json.load(f)
+  File "/usr/lib/python3.7/json/__init__.py", line 296, in load
+    parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.7/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2465 (char 2464)
+[2020-03-23 17:24:42,503] Sending Exception occured: [Expecting property name enclosed in double quotes: line 1 column 2465 (char 2464)] to slack
+[2020-03-23 17:24:42,504] Starting new HTTPS connection (1): hooks.slack.com:443
+[2020-03-23 17:24:43,357] https://hooks.slack.com:443 "POST /services/T010GMV9Q4V/B010JTP7AUE/J2nsAsiAmcOh3cbAh4ZD0v2W HTTP/1.1" 200 22
