@@ -39,3 +39,24 @@ if __name__ == '__main__':
     info = []
 
     
+    try:
+        response = requests.get(URL).content
+        soup = BeautifulSoup(response, 'html.parser')
+        header = extract_contents(soup.tr.find_all('th'))
+
+        stats = []
+        all_rows = soup.find_all('tr')
+        for row in all_rows:
+            stat = extract_contents(row.find_all('td'))
+            if stat:
+                if len(stat) == 5:
+                    # last row
+                    stat = ['', *stat]
+                    stats.append(stat)
+                elif any([s.lower() in stat[1].lower() for s in interested_states]):
+                    stats.append(stat)
+        
+        past_data = load()
+        cur_data = {x[1]: {current_time: x[2:]} for x in stats}
+   
+        changed = False
