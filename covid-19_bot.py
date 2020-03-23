@@ -60,3 +60,8 @@ if __name__ == '__main__':
         cur_data = {x[1]: {current_time: x[2:]} for x in stats}
    
         changed = False
+
+
+table = tabulate(stats, headers=SHORT_HEADERS, tablefmt='psql')
+            slack_text = f'Please find CoronaVirus Summary for India below:\n{events_info}\n```{table}```'
+            slacker()(slack_text)
