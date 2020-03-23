@@ -86,9 +86,9 @@ if __name__ == '__main__':
                 past_data[state][current_time] = cur_data[state][current_time]
             save(past_data)
 
-table = tabulate(stats, headers=SHORT_HEADERS, tablefmt='psql')
+            table = tabulate(stats, headers=SHORT_HEADERS, tablefmt='psql')
             slack_text = f'Please find CoronaVirus Summary for India below:\n{events_info}\n```{table}```'
             slacker()(slack_text)
-except Exception as e:
+    except Exception as e:
         logging.exception('oops, corono script failed.')
         slacker()(f'Exception occured: [{e}]')

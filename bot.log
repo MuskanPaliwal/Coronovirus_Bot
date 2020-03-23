@@ -1,0 +1,183 @@
+[2020-03-23 16:28:00,490] Starting new HTTPS connection (1): www.mohfw.gov.in:443
+[2020-03-23 16:28:00,897] https://www.mohfw.gov.in:443 "GET / HTTP/1.1" 200 5251
+[2020-03-23 16:28:00,945] oops, corono script failed.
+Traceback (most recent call last):
+  File "covid-19_bot.py", line 59, in <module>
+    past_data = load()
+  File "covid-19_bot.py", line 26, in load
+    with open(FILE_NAME, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'corona_india_data.json'
+[2020-03-23 16:28:00,946] Sending Exception occured: [[Errno 2] No such file or directory: 'corona_india_data.json'] to slack
+[2020-03-23 16:28:00,947] Starting new HTTPS connection (1): hooks.slack.com:443
+[2020-03-23 16:28:01,584] https://hooks.slack.com:443 "POST /services/T010GMV9Q4V/B010JTP7AUE/J2nsAsiAmcOh3cbAh4ZD0v2W HTTP/1.1" 200 22
+[2020-03-23 16:30:32,614] Starting new HTTPS connection (1): www.mohfw.gov.in:443
+[2020-03-23 16:30:33,432] https://www.mohfw.gov.in:443 "GET / HTTP/1.1" 200 5251
+[2020-03-23 16:30:33,482] oops, corono script failed.
+Traceback (most recent call last):
+  File "covid-19_bot.py", line 59, in <module>
+    past_data = load()
+  File "covid-19_bot.py", line 26, in load
+    with open(FILE_NAME, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'corona_india_data.json'
+[2020-03-23 16:30:33,482] Sending Exception occured: [[Errno 2] No such file or directory: 'corona_india_data.json'] to slack
+[2020-03-23 16:30:33,484] Starting new HTTPS connection (1): hooks.slack.com:443
+[2020-03-23 16:30:34,335] https://hooks.slack.com:443 "POST /services/T010GMV9Q4V/B010JTP7AUE/J2nsAsiAmcOh3cbAh4ZD0v2W HTTP/1.1" 200 22
+[2020-03-23 16:31:18,787] Starting new HTTPS connection (1): www.mohfw.gov.in:443
+[2020-03-23 16:31:19,195] https://www.mohfw.gov.in:443 "GET / HTTP/1.1" 200 5251
+[2020-03-23 16:31:19,244] NEW_STATE Advisory on the use of Hydroxy-chloroquin as prophylaxis for SARS-CoV-2 infection  got corona virus: []
+[2020-03-23 16:31:19,244] NEW_STATE  KIDS, VAAYU & CORONA : Comic book for children to provide correct information about COVID-19 - Part 2 got corona virus: []
+[2020-03-23 16:31:19,244] NEW_STATE  D.O. Letter from Cabinet Secretary to Chief Secretaries for management and containment of COVID-19 dated 22.03.2020 got corona virus: []
+[2020-03-23 16:31:19,244] NEW_STATE Notification of ICMR guidelines for COVID-19 testing in private laboratories in India  got corona virus: []
+[2020-03-23 16:31:19,244] NEW_STATE  Revised Guidelines/Strategy for COVID-19 testing by Indian Council of Medical Research (ICMR) got corona virus: []
+[2020-03-23 16:31:19,244] Change for Andhra Pradesh: ['1', '0', '0', '0']->['5', '0', '0', '0']
+[2020-03-23 16:31:19,244] NEW_STATE Bihar got corona virus: ['2', '0', '0', '1']
+[2020-03-23 16:31:19,244] NEW_STATE Chhattisgarh got corona virus: ['1', '0', '0', '0']
+[2020-03-23 16:31:19,244] Change for Delhi: ['11', '1', '2', '1']->['28', '1', '5', '1']
+[2020-03-23 16:31:19,244] NEW_STATE Gujarat got corona virus: ['18', '0', '0', '1']
+[2020-03-23 16:31:19,244] NEW_STATE Himachal Pradesh got corona virus: ['2', '0', '0', '0']
+[2020-03-23 16:31:19,245] Change for Karnataka: ['14', '0', '0', '1']->['26', '0', '2', '1']
+[2020-03-23 16:31:19,245] Change for Kerala: ['25', '2', '3', '0']->['60', '7', '3', '0']
+[2020-03-23 16:31:19,245] NEW_STATE Madhya Pradesh got corona virus: ['6', '0', '0', '0']
+[2020-03-23 16:31:19,245] Change for Odisha: ['1', '0', '0', '0']->['2', '0', '0', '0']
+[2020-03-23 16:31:19,245] NEW_STATE Puducherry got corona virus: ['1', '0', '0', '0']
+[2020-03-23 16:31:19,245] Change for Punjab: ['1', '0', '0', '0']->['21', '0', '0', '1']
+[2020-03-23 16:31:19,245] Change for Rajasthan: ['5', '2', '3', '0']->['25', '2', '3', '0']
+[2020-03-23 16:31:19,245] Change for Tamil Nadu: ['2', '0', '1', '0']->['7', '2', '1', '0']
+[2020-03-23 16:31:19,245] Change for Telengana: ['4', '2', '1', '0']->['15', '11', '1', '0']
+[2020-03-23 16:31:19,245] NEW_STATE Chandigarh got corona virus: ['5', '0', '0', '0']
+[2020-03-23 16:31:19,245] NEW_STATE Jammu and Kashmir got corona virus: ['4', '0', '0', '0']
+[2020-03-23 16:31:19,245] NEW_STATE Ladakh got corona virus: ['13', '0', '0', '0']
+[2020-03-23 16:31:19,245] Change for Uttar Pradesh: ['16', '1', '5', '0']->['27', '1', '9', '0']
+[2020-03-23 16:31:19,245] Change for Uttarakhand: ['1', '0', '0', '0']->['3', '0', '0', '0']
+[2020-03-23 16:31:19,245] Change for West Bengal: ['1', '0', '0', '0']->['7', '0', '0', '0']
+[2020-03-23 16:31:19,247] Sending Please find CoronaVirus Summary for India below:
+
+ - NEW_STATE Advisory on the use of Hydroxy-chloroquin as prophylaxis for SARS-CoV-2 infection  got corona virus: []
+ - NEW_STATE  KIDS, VAAYU & CORONA : Comic book for children to provide correct information about COVID-19 - Part 2 got corona virus: []
+ - NEW_STATE  D.O. Letter from Cabinet Secretary to Chief Secretaries for management and containment of COVID-19 dated 22.03.2020 got corona virus: []
+ - NEW_STATE Notification of ICMR guidelines for COVID-19 testing in private laboratories in India  got corona virus: []
+ - NEW_STATE  Revised Guidelines/Strategy for COVID-19 testing by Indian Council of Medical Research (ICMR) got corona virus: []
+ - Change for Andhra Pradesh: [1, 0, 0, 0]->[5, 0, 0, 0]
+ - NEW_STATE Bihar got corona virus: [2, 0, 0, 1]
+ - NEW_STATE Chhattisgarh got corona virus: [1, 0, 0, 0]
+ - Change for Delhi: [11, 1, 2, 1]->[28, 1, 5, 1]
+ - NEW_STATE Gujarat got corona virus: [18, 0, 0, 1]
+ - NEW_STATE Himachal Pradesh got corona virus: [2, 0, 0, 0]
+ - Change for Karnataka: [14, 0, 0, 1]->[26, 0, 2, 1]
+ - Change for Kerala: [25, 2, 3, 0]->[60, 7, 3, 0]
+ - NEW_STATE Madhya Pradesh got corona virus: [6, 0, 0, 0]
+ - Change for Odisha: [1, 0, 0, 0]->[2, 0, 0, 0]
+ - NEW_STATE Puducherry got corona virus: [1, 0, 0, 0]
+ - Change for Punjab: [1, 0, 0, 0]->[21, 0, 0, 1]
+ - Change for Rajasthan: [5, 2, 3, 0]->[25, 2, 3, 0]
+ - Change for Tamil Nadu: [2, 0, 1, 0]->[7, 2, 1, 0]
+ - Change for Telengana: [4, 2, 1, 0]->[15, 11, 1, 0]
+ - NEW_STATE Chandigarh got corona virus: [5, 0, 0, 0]
+ - NEW_STATE Jammu and Kashmir got corona virus: [4, 0, 0, 0]
+ - NEW_STATE Ladakh got corona virus: [13, 0, 0, 0]
+ - Change for Uttar Pradesh: [16, 1, 5, 0]->[27, 1, 9, 0]
+ - Change for Uttarakhand: [1, 0, 0, 0]->[3, 0, 0, 0]
+ - Change for West Bengal: [1, 0, 0, 0]->[7, 0, 0, 0]
+```+------------+---------------------------------------------------------------------------------------------------------------------+-------+------+------+------+
+| Sno        | State                                                                                                               | In    | Fr   |   Cd |   Dt |
+|------------+---------------------------------------------------------------------------------------------------------------------+-------+------+------+------|
+| 23-03-2020 | Advisory on the use of Hydroxy-chloroquin as prophylaxis for SARS-CoV-2 infection                                   |       |      |      |      |
+| 22-03-2020 | KIDS, VAAYU & CORONA : Comic book for children to provide correct information about COVID-19 - Part 2               |       |      |      |      |
+| 22-03-2020 | D.O. Letter from Cabinet Secretary to Chief Secretaries for management and containment of COVID-19 dated 22.03.2020 |       |      |      |      |
+| 22-03-2020 | Notification of ICMR guidelines for COVID-19 testing in private laboratories in India                               |       |      |      |      |
+| 21-03-2020 | Revised Guidelines/Strategy for COVID-19 testing by Indian Council of Medical Research (ICMR)                       |       |      |      |      |
+| 1          | Andhra Pradesh                                                                                                      | 5     | 0    |    0 |    0 |
+| 2          | Bihar                                                                                                               | 2     | 0    |    0 |    1 |
+| 3          | Chhattisgarh                                                                                                        | 1     | 0    |    0 |    0 |
+| 4          | Delhi                                                                                                               | 28    | 1    |    5 |    1 |
+| 5          | Gujarat                                                                                                             | 18    | 0    |    0 |    1 |
+| 6          | Haryana                                                                                                             | 7     | 14   |    0 |    0 |
+| 7          | Himachal Pradesh                                                                                                    | 2     | 0    |    0 |    0 |
+| 8          | Karnataka                                                                                                           | 26    | 0    |    2 |    1 |
+| 9          | Kerala                                                                                                              | 60    | 7    |    3 |    0 |
+| 10         | Madhya Pradesh                                                                                                      | 6     | 0    |    0 |    0 |
+| 11         | Maharashtra                                                                                                         | 64    | 3    |    0 |    2 |
+| 12         | Odisha                                                                                                              | 2     | 0    |    0 |    0 |
+| 13         | Puducherry                                                                                                          | 1     | 0    |    0 |    0 |
+| 14         | Punjab                                                                                                              | 21    | 0    |    0 |    1 |
+| 15         | Rajasthan                                                                                                           | 25    | 2    |    3 |    0 |
+| 16         | Tamil Nadu                                                                                                          | 7     | 2    |    1 |    0 |
+| 17         | Telengana                                                                                                           | 15    | 11   |    1 |    0 |
+| 18         | Chandigarh                                                                                                          | 5     | 0    |    0 |    0 |
+| 19         | Jammu and Kashmir                                                                                                   | 4     | 0    |    0 |    0 |
+| 20         | Ladakh                                                                                                              | 13    | 0    |    0 |    0 |
+| 21         | Uttar Pradesh                                                                                                       | 27    | 1    |    9 |    0 |
+| 22         | Uttarakhand                                                                                                         | 3     | 0    |    0 |    0 |
+| 23         | West Bengal                                                                                                         | 7     | 0    |    0 |    0 |
+|            | Total number of confirmed cases in India                                                                            | 349 * | 41 * |   24 |    7 |
++------------+---------------------------------------------------------------------------------------------------------------------+-------+------+------+------+``` to slack
+[2020-03-23 16:31:19,248] Starting new HTTPS connection (1): hooks.slack.com:443
+[2020-03-23 16:31:20,144] https://hooks.slack.com:443 "POST /services/T010GMV9Q4V/B010JTP7AUE/J2nsAsiAmcOh3cbAh4ZD0v2W HTTP/1.1" 200 22
+[2020-03-23 16:32:40,580] Starting new HTTPS connection (1): www.mohfw.gov.in:443
+[2020-03-23 16:32:41,100] https://www.mohfw.gov.in:443 "GET / HTTP/1.1" 200 5251
+[2020-03-23 16:33:19,863] Starting new HTTPS connection (1): www.mohfw.gov.in:443
+[2020-03-23 16:33:20,184] https://www.mohfw.gov.in:443 "GET / HTTP/1.1" 200 5251
+[2020-03-23 16:35:15,634] Starting new HTTPS connection (1): www.mohfw.gov.in:443
+[2020-03-23 16:35:15,963] https://www.mohfw.gov.in:443 "GET / HTTP/1.1" 200 5251
+[2020-03-23 16:41:39,413] Starting new HTTPS connection (1): www.mohfw.gov.in:443
+[2020-03-23 16:41:39,729] https://www.mohfw.gov.in:443 "GET / HTTP/1.1" 200 5251
+[2020-03-23 16:44:31,340] Starting new HTTPS connection (1): www.mohfw.gov.in:443
+[2020-03-23 16:44:31,994] https://www.mohfw.gov.in:443 "GET / HTTP/1.1" 200 5251
+[2020-03-23 16:47:16,408] Starting new HTTPS connection (1): www.mohfw.gov.in:443
+[2020-03-23 16:47:16,874] https://www.mohfw.gov.in:443 "GET / HTTP/1.1" 200 5251
+[2020-03-23 16:47:16,896] oops, corono script failed.
+Traceback (most recent call last):
+  File "covid-19_bot.py", line 59, in <module>
+    past_data = load()
+  File "covid-19_bot.py", line 26, in load
+    with open(FILE_NAME, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'corona_india_data.json'
+[2020-03-23 16:47:16,896] Sending Exception occured: [[Errno 2] No such file or directory: 'corona_india_data.json'] to slack
+[2020-03-23 16:47:16,897] Starting new HTTPS connection (1): hooks.slack.com:443
+[2020-03-23 16:47:17,517] https://hooks.slack.com:443 "POST /services/T010GMV9Q4V/B010JTP7AUE/J2nsAsiAmcOh3cbAh4ZD0v2W HTTP/1.1" 200 22
+[2020-03-23 16:48:25,587] Starting new HTTPS connection (1): www.mohfw.gov.in:443
+[2020-03-23 16:48:34,549] https://www.mohfw.gov.in:443 "GET / HTTP/1.1" 200 5251
+[2020-03-23 16:48:34,597] oops, corono script failed.
+Traceback (most recent call last):
+  File "covid-19_bot.py", line 59, in <module>
+    past_data = load()
+  File "covid-19_bot.py", line 26, in load
+    with open(FILE_NAME, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'corona_india_data.json'
+[2020-03-23 16:48:34,597] Sending Exception occured: [[Errno 2] No such file or directory: 'corona_india_data.json'] to slack
+[2020-03-23 16:48:34,598] Starting new HTTPS connection (1): hooks.slack.com:443
+[2020-03-23 16:48:38,242] https://hooks.slack.com:443 "POST /services/T010GMV9Q4V/B010JTP7AUE/J2nsAsiAmcOh3cbAh4ZD0v2W HTTP/1.1" 200 22
+[2020-03-23 16:50:42,067] Starting new HTTPS connection (1): www.mohfw.gov.in:443
+[2020-03-23 16:50:42,770] https://www.mohfw.gov.in:443 "GET / HTTP/1.1" 200 5251
+[2020-03-23 16:50:42,819] oops, corono script failed.
+Traceback (most recent call last):
+  File "covid-19_bot.py", line 59, in <module>
+    past_data = load()
+  File "covid-19_bot.py", line 27, in load
+    res = json.load(f)
+  File "/usr/lib/python3.7/json/__init__.py", line 296, in load
+    parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/usr/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2020-03-23 16:50:42,821] Sending Exception occured: [Expecting value: line 1 column 1 (char 0)] to slack
+[2020-03-23 16:50:42,822] Starting new HTTPS connection (1): hooks.slack.com:443
+[2020-03-23 16:50:44,079] https://hooks.slack.com:443 "POST /services/T010GMV9Q4V/B010JTP7AUE/J2nsAsiAmcOh3cbAh4ZD0v2W HTTP/1.1" 200 22
+[2020-03-23 16:52:55,877] Starting new HTTPS connection (1): www.mohfw.gov.in:443
+[2020-03-23 16:52:57,271] https://www.mohfw.gov.in:443 "GET / HTTP/1.1" 200 5251
+[2020-03-23 16:52:57,292] oops, corono script failed.
+Traceback (most recent call last):
+  File "covid-19_bot.py", line 59, in <module>
+    past_data = load()
+  File "covid-19_bot.py", line 26, in load
+    with open(FILE_NAME, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'corona_india_data.json'
+[2020-03-23 16:52:57,292] Sending Exception occured: [[Errno 2] No such file or directory: 'corona_india_data.json'] to slack
+[2020-03-23 16:52:57,293] Starting new HTTPS connection (1): hooks.slack.com:443
+[2020-03-23 16:52:58,914] https://hooks.slack.com:443 "POST /services/T010GMV9Q4V/B010JTP7AUE/J2nsAsiAmcOh3cbAh4ZD0v2W HTTP/1.1" 200 22
+[2020-03-23 17:12:04,628] Starting new HTTPS connection (1): www.mohfw.gov.in:443
+[2020-03-23 17:12:05,514] https://www.mohfw.gov.in:443 "GET / HTTP/1.1" 200 5251
