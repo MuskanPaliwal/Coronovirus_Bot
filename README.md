@@ -20,8 +20,8 @@ pip install beautifulsoup4
 ```
 - Clone this repo and create auth.py
 ```bash
-git clone https://github.com/rachitiitr/coronovirus-bot-tracker.git
-cd coronovirus-bot-tracker
+git clone https://github.com/MuskanPaliwal/Coronovirus_Bot.git
+cd Coronovirus_Bot
 touch auth.py
 ```
 - Write your Slack Webhook into auth.py
