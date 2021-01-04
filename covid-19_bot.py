@@ -11,7 +11,7 @@ FORMAT = '[%(asctime)-15s] %(message)s'
 logging.basicConfig(format=FORMAT, level=logging.DEBUG, filename='bot.log', filemode='a')
 
 URL = 'https://www.mohfw.gov.in/'
-SHORT_HEADERS = ['Sno', 'State','In','Fr','Cd','Dt']
+SHORT_HEADERS = ['Sno', 'State', 'In', 'Fr', 'Cd', 'Dt']
 FILE_NAME = 'corona_india_data.json'
 extract_contents = lambda row: [x.text.replace('\n', '') for x in row]
 
@@ -26,19 +26,19 @@ def load():
     with open(FILE_NAME, 'r') as f:
         res = json.load(f)
     return res
-    
+
 
 if __name__ == '__main__':
-   
+
     parser  = argparse.ArgumentParser()
     parser.add_argument('--states', default=',')
     args = parser.parse_args()
     interested_states = args.states.split(',')
-    
+
     current_time = datetime.datetime.now().strftime('%d/%m/%Y %H:%M')
     info = []
 
-    
+
     try:
         response = requests.get(URL).content
         soup = BeautifulSoup(response, 'html.parser')
@@ -53,12 +53,12 @@ if __name__ == '__main__':
                     # last row
                     stat = ['', *stat]
                     stats.append(stat)
-                elif any([s.lower() in stat[1].lower() for s in interested_states]):
+                elif len(state) >=2 and any([s.lower() in stat[1].lower() for s in interested_states]):
                     stats.append(stat)
-        
+
         past_data = load()
         cur_data = {x[1]: {current_time: x[2:]} for x in stats}
-   
+
         changed = False
 
         for state in cur_data:
@@ -73,7 +73,7 @@ if __name__ == '__main__':
                 if past != cur:
                     changed = True
                     info.append(f'Change for {state}: {past}->{cur}')
-        
+
         events_info = ''
         for event in info:
             logging.warning(event)

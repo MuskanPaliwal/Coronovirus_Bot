@@ -35,5 +35,3 @@ crontab -e # opens an editor like vim or nano
 */5 * * * * cd $PATH_TO_CLONE_DIR; python3 covid-19_bot.py --states 'haryana,maharashtra'
 # to receive updates for all states, ignore the --states flag
 ```
-
-
